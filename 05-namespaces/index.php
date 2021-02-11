@@ -1,5 +1,6 @@
 <?php
 
+//Q1
 require __DIR__ . "/vendor/autoload.php";
 
 echo "\nQuestion 1:\n";
@@ -12,7 +13,7 @@ dump($sayHi->hello("Orb")); // "Hello Orb"
 dump($sayHi->hello("Horse")); // "Hello Horse"
 
 
-
+//Q2
 echo "\nQuestion 2:\n";
 
 use App\Stuff\Things\Potato;
@@ -33,3 +34,19 @@ dump($potato->hasGrown()); // true
 $potato->water(); // 6 water
 $potato->water(); // 7 water
 dump($potato->hasGrown()); // true
+
+
+//Q3
+echo "\nQuestion 3:\n";
+
+use App\Library\Book;
+
+$book = new Book("Zero: The Biography of a Dangerous Idea", 256); // 2 arguments, so 2 parameters.
+
+// read 12 pages
+$book->read(12);
+dump($book->currentPage()); // 13 - start on page 1
+
+// read another 25 pages
+$book->read(25);
+dump($book->currentPage()); // 38
