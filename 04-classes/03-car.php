@@ -6,7 +6,6 @@ require __DIR__ . "/vendor/autoload.php";
 // ... your class here
 class Car
 {
-    private $addMileage = 0;
     private $currentMileage = 0;
     private $getNumberPlate;
     private $getMake;
